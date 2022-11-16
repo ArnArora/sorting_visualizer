@@ -52,6 +52,10 @@ public:
         for (int i = 0; i < n; i++) {
             draw_bar(list[i], win_pad + i * (bar_w + gap));
         }
+
+        window.display();
+        sf::Time wait = sf::seconds(5);
+        sf::sleep(wait);
     }
     
     // Moves elemnt list[i] to position newpositions[i]
