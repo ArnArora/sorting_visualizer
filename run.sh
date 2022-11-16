@@ -1,4 +1,6 @@
-#!/bin/bash
-g++ -o visualizer visualizer.cpp -lSDL2
-./visualizer
-rm visualizer
+#!/bin/sh
+
+echo $1
+g++ -o $1 $1.cpp -lSFML
+./$1
+rm $1
