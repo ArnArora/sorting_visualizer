@@ -1,4 +1,5 @@
 #include <SFML/System/Sleep.hpp>
+#include <SFML/System/Time.hpp>
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include <SFML/Graphics/CircleShape.hpp>
@@ -104,6 +105,8 @@ public:
             sf::Time pause = sf::seconds(1.0 / fps);
             sf::sleep(pause);
         }
+
+        sf::sleep(sf::seconds(1.0));
     }
 
     void quit() {
