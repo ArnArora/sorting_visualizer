@@ -42,6 +42,7 @@ int main()
     vector<double> arr;
     double max_val = 0;
     for (int i = 0; i < n; i++) {
+        cout << i + 1 << ". ";
         double temp;
         cin >> temp;
         arr.push_back(temp);
@@ -72,7 +73,8 @@ int main()
         for (int j = insert; j < i; j++) {
             new_positions[j] = j + 1;
         }
-        vis.move(arr, new_positions);
+        vector<int> highlighted{ i };
+        vis.move(arr, new_positions, highlighted);
 
         // Insert element in list vector
         double temp = arr[i];
