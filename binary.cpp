@@ -1,6 +1,6 @@
 #include <algorithm>
-#include <bits/std_thread.h>
-#include <bits/stdc++.h>
+// #include <bits/std_thread.h>
+// #include <bits/stdc++.h>
 #include <iostream>
 #include <vector>
 
@@ -73,7 +73,8 @@ int main()
         for (int j = insert; j < i; j++) {
             new_positions[j] = j + 1;
         }
-        vector<int> highlighted{ i };
+        vector<int> highlighted;
+        highlighted.push_back(i);
         vis.move(arr, new_positions, highlighted);
 
         // Insert element in list vector
