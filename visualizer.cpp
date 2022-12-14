@@ -15,7 +15,6 @@ using namespace std;
 class visualizer {
 public:
     sf::RenderWindow window;
-    // vector<double> list;
     int n;
     double max_val;
     double win_w;
@@ -40,10 +39,7 @@ public:
         // n = vec.size();
         n = num_in_list;
         
-        // Find maximum in list
-        for (int i = 0; i < n; i++) {
-            max_val = max;
-        }
+        max_val = max;
 
         // Calculate window padding and gap between bars
         win_pad = 0.05 * win_w;
